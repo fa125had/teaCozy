@@ -1,10 +1,10 @@
 * {
-  margin:  0;
+  margin: 0;
   padding: 0;
   color: seashell;
   opacity: 0.9;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 22px;
+  box-sizing: border-box;
 }
 body {
   background-color: black;
@@ -39,7 +39,6 @@ main {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  
 }
 
 /*-----------MISSION SECTION--------------*/
@@ -60,8 +59,7 @@ main {
   top: 250px;
   width: 1200px;
   line-height: 2rem;
-  /* // flex-wrap: wrap;
- // border: 5px solid red; */
+  /* border: 5px solid red;  */
 }
 /*-----------------------------------------*/
 
@@ -90,66 +88,51 @@ main {
 /*------------------------------------------*/
 
 /*-----------LOCATIONS--------------*/
+.test {
+  text-align: center;
+}
 .locations-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  /* // flex-direction: column; */
   height: 500px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 40px 0;
-  /* border: 10px solid yellow; */
-  /* // text-align: center; */
+  background-image: url(../images/img-locations-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  flex-wrap: wrap;
+  padding-top: 3%;
 }
-.locations-box img {
-  width: 100%;
-  height: 500px;
-  
-  
-}
-.address-box h2 {
-  position: absolute;
-  z-index:8;
-  top: 0;
-  
+.locationtitle {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .address-box {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-  position: absolute;
+
   text-align: center;
+  flex-wrap: wrap;
   /* border: 5px solid pink; */
-  gap:40px;
-  
+  gap: 40px;
+  margin: 40px 40px;
 }
 
-.downtown {
+.box {
   width: 300px;
   background-color: black;
   opacity: 1;
-  line-height:3rem;
+  line-height: 3rem;
   padding: 5px;
-  /* // border: 10px solid red; */
+  /* border: 10px solid red; */
 }
-.east-bayside {
-  width: 300px;
-  background-color: black;
-  opacity: 1;
-  line-height:3rem;
-  padding: 5px;
-  /* // border: 10px solid red; */
-}
-.oakdale {
-  width: 300px;
-  background-color: black;
-  opacity: 1;
-  line-height:3rem;
-  padding: 5px;
-  /* // border: 10px solid red; */
+.box p {
+  font-size: 18px;
 }
 
 /*------------------------------------------*/
