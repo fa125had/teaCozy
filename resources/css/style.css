@@ -43,23 +43,22 @@ main {
 
 /*-----------MISSION SECTION--------------*/
 .mission-box {
-  max-width: 1200px;
-  height: 700px;
-  position: relative;
-  /* border: 5px solid green; */
-}
-.mission-box img {
-  height: 700px;
+  display: flex;
+  align-items: baseline;
+  background-image: url("../images/img-mission-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 1200px;
+  height: 700px;
 }
 .mission-banner {
+  margin-top: 25%;
   background-color: black;
   text-align: center;
-  position: absolute;
   top: 250px;
-  width: 1200px;
+  flex-basis: 100%;
   line-height: 2rem;
-  /* border: 5px solid red;  */
 }
 /*-----------------------------------------*/
 
@@ -88,12 +87,9 @@ main {
 /*------------------------------------------*/
 
 /*-----------LOCATIONS--------------*/
-.test {
-  text-align: center;
-}
 .locations-box {
   height: 500px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 40px 0;
   background-image: url(../images/img-locations-background.jpeg);
   background-repeat: no-repeat;
@@ -112,24 +108,21 @@ main {
 .address-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
 
   text-align: center;
   flex-wrap: wrap;
-  /* border: 5px solid pink; */
   gap: 40px;
   margin: 40px 40px;
 }
 
 .box {
-  width: 300px;
+  flex-basis: 300px;
   background-color: black;
   opacity: 1;
   line-height: 3rem;
-  padding: 5px;
-  /* border: 10px solid red; */
 }
 .box p {
   font-size: 18px;
@@ -139,11 +132,9 @@ main {
 
 /*-----------FOOTER--------------*/
 footer {
-  margin: 40px 0;
   height: 200px;
   text-align: center;
   line-height: 3rem;
-  /* border:  5px solid blue; */
 }
 footer p {
   text-align: left;
