@@ -1,9 +1,10 @@
 * {
-  margin: 0;
+  margin:  0;
   padding: 0;
-  font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
 }
 body {
   background-color: black;
@@ -30,52 +31,52 @@ header {
   display: inline-flex;
   margin-right: 10px;
 }
-.container {
-  display: block;
-}
+
 /*----------------------------------------*/
 
 main {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
-
+  
 }
 
 /*-----------MISSION SECTION--------------*/
 .mission-box {
   max-width: 1200px;
   height: 700px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-
+  position: relative;
+  /* border: 5px solid green; */
 }
 .mission-box img {
-  height: 100%;
+  height: 700px;
+  width: 1200px;
 }
 .mission-banner {
   background-color: black;
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 250px;
   width: 1200px;
   line-height: 2rem;
+  /* // flex-wrap: wrap;
+ // border: 5px solid red; */
 }
 /*-----------------------------------------*/
 
 /*-----------Tea of the Month--------------*/
 .featured-box {
+  margin-top: 20px;
   max-width: 1000px;
   text-align: center;
+  margin: 40px 0;
 }
+
 .featured-tea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
-
 }
 .featured-tea figure img {
   width: 300px;
@@ -88,3 +89,81 @@ main {
 }
 /*------------------------------------------*/
 
+/*-----------LOCATIONS--------------*/
+.locations-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* // flex-direction: column; */
+  height: 500px;
+  width: 1200px;
+  margin: 40px 0;
+  /* border: 10px solid yellow; */
+  /* // text-align: center; */
+}
+.locations-box img {
+  width: 100%;
+  height: 500px;
+  
+  
+}
+.address-box h2 {
+  position: absolute;
+  z-index:8;
+  top: 0;
+  
+}
+
+.address-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  text-align: center;
+  /* border: 5px solid pink; */
+  gap:40px;
+  
+}
+
+.downtown {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  line-height:3rem;
+  padding: 5px;
+  /* // border: 10px solid red; */
+}
+.east-bayside {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  line-height:3rem;
+  padding: 5px;
+  /* // border: 10px solid red; */
+}
+.oakdale {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  line-height:3rem;
+  padding: 5px;
+  /* // border: 10px solid red; */
+}
+
+/*------------------------------------------*/
+
+/*-----------FOOTER--------------*/
+footer {
+  margin: 40px 0;
+  height: 200px;
+  text-align: center;
+  line-height: 3rem;
+  /* border:  5px solid blue; */
+}
+footer p {
+  text-align: left;
+  margin-left: 20px;
+}
+/*------------------------------------------*/
